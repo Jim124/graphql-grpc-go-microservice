@@ -3,12 +3,10 @@ package account
 import (
 	"context"
 	"database/sql"
+
+	_ "github.com/lib/pq"
 )
 
-type Account struct {
-	ID   string
-	Name string
-}
 type Repository interface {
 	Close()
 	PutAccount(ctx context.Context, a Account) error
