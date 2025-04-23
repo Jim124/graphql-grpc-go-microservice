@@ -1,6 +1,6 @@
 syntax = "proto3";
-option go_package="github.com/graphql-grpc-go-microservice/account/protobuf";
-package protobuf;
+option go_package="./";
+package account;
 
 message Account{
   string id = 1;

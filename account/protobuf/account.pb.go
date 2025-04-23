@@ -4,7 +4,7 @@
 // 	protoc        v5.29.3
 // source: account.proto
 
-package protobuf
+package __
 
 import (
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
@@ -349,28 +349,28 @@ var File_account_proto protoreflect.FileDescriptor
 
 const file_account_proto_rawDesc = "" +
 	"\n" +
-	"\raccount.proto\x12\bprotobuf\"-\n" +
+	"\raccount.proto\x12\aaccount\"-\n" +
 	"\aAccount\x12\x0e\n" +
 	"\x02id\x18\x01 \x01(\tR\x02id\x12\x12\n" +
 	"\x04name\x18\x02 \x01(\tR\x04name\"(\n" +
 	"\x12PostAccountRequest\x12\x12\n" +
-	"\x04name\x18\x01 \x01(\tR\x04name\"B\n" +
-	"\x13PostAccountResponse\x12+\n" +
-	"\aaccount\x18\x01 \x01(\v2\x11.protobuf.AccountR\aaccount\"#\n" +
+	"\x04name\x18\x01 \x01(\tR\x04name\"A\n" +
+	"\x13PostAccountResponse\x12*\n" +
+	"\aaccount\x18\x01 \x01(\v2\x10.account.AccountR\aaccount\"#\n" +
 	"\x11GetAccountRequest\x12\x0e\n" +
-	"\x02id\x18\x01 \x01(\tR\x02id\"A\n" +
-	"\x12GetAccountResponse\x12+\n" +
-	"\aaccount\x18\x01 \x01(\v2\x11.protobuf.AccountR\aaccount\"<\n" +
+	"\x02id\x18\x01 \x01(\tR\x02id\"@\n" +
+	"\x12GetAccountResponse\x12*\n" +
+	"\aaccount\x18\x01 \x01(\v2\x10.account.AccountR\aaccount\"<\n" +
 	"\x12GetAccountsRequest\x12\x12\n" +
 	"\x04skip\x18\x01 \x01(\x04R\x04skip\x12\x12\n" +
-	"\x04take\x18\x02 \x01(\x04R\x04take\"D\n" +
-	"\x13GetAccountsResponse\x12-\n" +
-	"\baccounts\x18\x01 \x03(\v2\x11.protobuf.AccountR\baccounts2\xf7\x01\n" +
-	"\x0eAccountService\x12L\n" +
-	"\vPostAccount\x12\x1c.protobuf.PostAccountRequest\x1a\x1d.protobuf.PostAccountResponse\"\x00\x12I\n" +
+	"\x04take\x18\x02 \x01(\x04R\x04take\"C\n" +
+	"\x13GetAccountsResponse\x12,\n" +
+	"\baccounts\x18\x01 \x03(\v2\x10.account.AccountR\baccounts2\xf1\x01\n" +
+	"\x0eAccountService\x12J\n" +
+	"\vPostAccount\x12\x1b.account.PostAccountRequest\x1a\x1c.account.PostAccountResponse\"\x00\x12G\n" +
 	"\n" +
-	"GetAccount\x12\x1b.protobuf.GetAccountRequest\x1a\x1c.protobuf.GetAccountResponse\"\x00\x12L\n" +
-	"\vGetAccounts\x12\x1c.protobuf.GetAccountsRequest\x1a\x1d.protobuf.GetAccountsResponse\"\x00B:Z8github.com/graphql-grpc-go-microservice/account/protobufb\x06proto3"
+	"GetAccount\x12\x1a.account.GetAccountRequest\x1a\x1b.account.GetAccountResponse\"\x00\x12J\n" +
+	"\vGetAccounts\x12\x1b.account.GetAccountsRequest\x1a\x1c.account.GetAccountsResponse\"\x00B\x04Z\x02./b\x06proto3"
 
 var (
 	file_account_proto_rawDescOnce sync.Once
@@ -386,24 +386,24 @@ func file_account_proto_rawDescGZIP() []byte {
 
 var file_account_proto_msgTypes = make([]protoimpl.MessageInfo, 7)
 var file_account_proto_goTypes = []any{
-	(*Account)(nil),             // 0: protobuf.Account
-	(*PostAccountRequest)(nil),  // 1: protobuf.PostAccountRequest
-	(*PostAccountResponse)(nil), // 2: protobuf.PostAccountResponse
-	(*GetAccountRequest)(nil),   // 3: protobuf.GetAccountRequest
-	(*GetAccountResponse)(nil),  // 4: protobuf.GetAccountResponse
-	(*GetAccountsRequest)(nil),  // 5: protobuf.GetAccountsRequest
-	(*GetAccountsResponse)(nil), // 6: protobuf.GetAccountsResponse
+	(*Account)(nil),             // 0: account.Account
+	(*PostAccountRequest)(nil),  // 1: account.PostAccountRequest
+	(*PostAccountResponse)(nil), // 2: account.PostAccountResponse
+	(*GetAccountRequest)(nil),   // 3: account.GetAccountRequest
+	(*GetAccountResponse)(nil),  // 4: account.GetAccountResponse
+	(*GetAccountsRequest)(nil),  // 5: account.GetAccountsRequest
+	(*GetAccountsResponse)(nil), // 6: account.GetAccountsResponse
 }
 var file_account_proto_depIdxs = []int32{
-	0, // 0: protobuf.PostAccountResponse.account:type_name -> protobuf.Account
-	0, // 1: protobuf.GetAccountResponse.account:type_name -> protobuf.Account
-	0, // 2: protobuf.GetAccountsResponse.accounts:type_name -> protobuf.Account
-	1, // 3: protobuf.AccountService.PostAccount:input_type -> protobuf.PostAccountRequest
-	3, // 4: protobuf.AccountService.GetAccount:input_type -> protobuf.GetAccountRequest
-	5, // 5: protobuf.AccountService.GetAccounts:input_type -> protobuf.GetAccountsRequest
-	2, // 6: protobuf.AccountService.PostAccount:output_type -> protobuf.PostAccountResponse
-	4, // 7: protobuf.AccountService.GetAccount:output_type -> protobuf.GetAccountResponse
-	6, // 8: protobuf.AccountService.GetAccounts:output_type -> protobuf.GetAccountsResponse
+	0, // 0: account.PostAccountResponse.account:type_name -> account.Account
+	0, // 1: account.GetAccountResponse.account:type_name -> account.Account
+	0, // 2: account.GetAccountsResponse.accounts:type_name -> account.Account
+	1, // 3: account.AccountService.PostAccount:input_type -> account.PostAccountRequest
+	3, // 4: account.AccountService.GetAccount:input_type -> account.GetAccountRequest
+	5, // 5: account.AccountService.GetAccounts:input_type -> account.GetAccountsRequest
+	2, // 6: account.AccountService.PostAccount:output_type -> account.PostAccountResponse
+	4, // 7: account.AccountService.GetAccount:output_type -> account.GetAccountResponse
+	6, // 8: account.AccountService.GetAccounts:output_type -> account.GetAccountsResponse
 	6, // [6:9] is the sub-list for method output_type
 	3, // [3:6] is the sub-list for method input_type
 	3, // [3:3] is the sub-list for extension type_name

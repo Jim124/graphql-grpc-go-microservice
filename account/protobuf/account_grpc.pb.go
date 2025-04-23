@@ -4,7 +4,7 @@
 // - protoc             v5.29.3
 // source: account.proto
 
-package protobuf
+package __
 
 import (
 	context "context"
@@ -19,9 +19,9 @@ import (
 const _ = grpc.SupportPackageIsVersion9
 
 const (
-	AccountService_PostAccount_FullMethodName = "/protobuf.AccountService/PostAccount"
-	AccountService_GetAccount_FullMethodName  = "/protobuf.AccountService/GetAccount"
-	AccountService_GetAccounts_FullMethodName = "/protobuf.AccountService/GetAccounts"
+	AccountService_PostAccount_FullMethodName = "/account.AccountService/PostAccount"
+	AccountService_GetAccount_FullMethodName  = "/account.AccountService/GetAccount"
+	AccountService_GetAccounts_FullMethodName = "/account.AccountService/GetAccounts"
 )
 
 // AccountServiceClient is the client API for AccountService service.
@@ -176,7 +176,7 @@ func _AccountService_GetAccounts_Handler(srv interface{}, ctx context.Context, d
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
 var AccountService_ServiceDesc = grpc.ServiceDesc{
-	ServiceName: "protobuf.AccountService",
+	ServiceName: "account.AccountService",
 	HandlerType: (*AccountServiceServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{
